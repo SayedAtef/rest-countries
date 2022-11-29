@@ -21,7 +21,7 @@ const Topbar = () => {
     <IconContext.Provider
       value={{ color: theme === "dark" ? "white" : "black" }}
     >
-      <div className="flex justify-between py-8 shadow-md px-4 bg-white dark:bg-[#2b3945] dark:text-white">
+      <header className="flex justify-between py-8 shadow-md px-4 bg-white dark:bg-[#2b3945] dark:text-white">
         <p className="font-extrabold">Where in the world?</p>
         <button
           onClick={switcher}
@@ -32,7 +32,7 @@ const Topbar = () => {
           </div>
           <p className="font-medium">Dark Mode</p>
         </button>
-      </div>
+      </header>
     </IconContext.Provider>
   );
 };

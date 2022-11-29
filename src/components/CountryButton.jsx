@@ -27,9 +27,9 @@ const CountryButton = ({ code }) => {
   }, [code]);
 
   return (
-    <button className="py-2 bg-white flex justify-center gap-3 w-24 mt-5 shadow-md font-semibold dark:bg-[#2b3945] ">
+    <p className="py-2 bg-white flex justify-center gap-3 w-24 mt-5 shadow-md font-semibold dark:bg-[#2b3945] cursor-pointer">
       {dataC && dataC[0]?.name?.common}
-    </button>
+    </p>
   );
 };
 

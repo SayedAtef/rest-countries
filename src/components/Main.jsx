@@ -26,12 +26,12 @@ const Main = () => {
   if (isLoading) return <p>Loading</p>;
   if (isError) return <p>not found</p>;
   return (
-    <div className="md:grid lg:grid-cols-4 ">
+    <main className="md:grid lg:grid-cols-4 ">
       {!isError &&
         !isLoading &&
         data?.map((item, i) => (
-          <button
-            className="w-full"
+          <div
+            className="w-full cursor-pointer"
             key={i}
             onClick={() => navigate(`/${item.name.common}`)}
           >
@@ -42,9 +42,9 @@ const Main = () => {
               region={item.region}
               capital={item.capital}
             />
-          </button>
+          </div>
         ))}
-    </div>
+    </main>
   );
 };
 
